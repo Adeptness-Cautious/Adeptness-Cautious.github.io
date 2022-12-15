@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>RadBid - A Blockchain-based E-Auction System</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="agen" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- venobox css -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+  <!-- card slider -->
+  <link rel="stylesheet" href="plugins/card-slider/css/style.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html"><img src="images/radbid-logo.png" width="160"  alt="Egen"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#preview">Preview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#development">Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#future-scope">Future Scope</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- RADBID  -->
+<!-- banner -->
+<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
+  data-background="images/banner/banner2.jpg" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-1 text-white font-weight-bold font-primary" style="color:#E84448">RADBID</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /banner -->
+
+
+<!-- Overview -->
+<!-- service -->
+<section class="section" id="overview">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title">Overview</h2>
+        <p class="lead">The objective of this project is to provide a full-stack working application that allows users in a closed system (permissioned blockchain network) to hold an English-type auction with either an open bid strategy. For this, we use Radix as a ledger to secure the bidding process. Smart contracts written in Scrypto, which is Rust based, allow us to focus on quickly programming finance logic for the auction system.</p>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4 active">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <i
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-palette mb-5 d-inline-block text-white"></i>
+              <i class="icon-lg icon-watermark text-white ti-palette"></i>
+            </div>
+            <h4 class="mb-4">Mission</h4>
+            <p>The mainstream smart contracts present in the market today do not live up to the principles of being: easy, safe, reusable, or composable. Scrypto provides a solution that is scalable. The Radix Engine V2 and Scrypto rethinks smart contracts from scratch to fulfill the requirements of DeFi applications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <i
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-dashboard mb-5 d-inline-block text-white"></i>
+              <i class="icon-lg icon-watermark text-white ti-dashboard"></i>
+            </div>
+            <h4 class="mb-4">Work</h4>
+            <p>In our system every item detail is stored as an NFT. Each NFT holds basic details of the item like name, id, and the price of the item. Whenever a certain NFT is proposed, the admin has the privileges of checking if the item is valid and then can approve the NFT. The seller can then use the NFT badge to authorise the start of the auction.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <i
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-announcement mb-5 d-inline-block text-white"></i>
+              <i class="icon-lg icon-watermark text-white ti-announcement"></i>
+            </div>
+            <h4 class="mb-4">Use Cases</h4>
+            <p>This decentralised auction system can be used in place of the existing online auction systems. This is because of the added security and anonymity that comes with blockchain solutions. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /service -->
+
+
+<!-- Preview -->
+<!-- service -->
+<section class="section" id="preview">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title">Preview</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h3>Login Page</h3>
+        <p class="lead">Users can use there credentials to login to the auction portal</p>
+          <div class="text-center">
+            <img  src="images/preview/1.png" class="img-fluid" alt="Responsive image">
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <h3>Invalid Authorisation</h3>
+        <p class="lead">If the credentials are wrong, the user will not be able to able to access the auction page.</p>
+          <div class="text-center">
+            <img  src="images/preview/2.png" class="img-fluid" alt="Responsive image">
+          </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <h3>Valid Authorisation</h3>
+        <p class="lead">If the credentials are right, the user will be able to login and access the auction page which shows the latest activity performed, auctions that are going on and also the items that are present in the auction</p>
+          <div class="text-center">
+            <img  src="images/preview/3.png" class="img-fluid" alt="Responsive image">
+          </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <h3>Auction Item Listings</h3>
+        <p class="lead">In this page all the items that are present in the auction are shown. Users can bid on whatever item they are interested in. This page also shows if the item is still on bid or it is sold.  </p>
+          <div class="text-center">
+            <img  src="images/preview/4.png" class="img-fluid" alt="Responsive image">
+          </div>
+
+          <div class="text-center mt-3">
+            <img  src="images/preview/5.png" class="img-fluid" alt="Responsive image">
+          </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <h3>User Page - Admin</h3>
+        <p class="lead">This is the admin view. The admin can see all the users that are present in the auction and the status of the items in the auction.</p>
+          <div class="text-center">
+            <img  src="images/preview/6.png" class="img-fluid" alt="Responsive image">
+          </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /service -->
+
+
+<!-- Development -->
+<!-- service -->
+<section class="section" id="development">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title">Development</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <img  src="images/preview/7.png" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-4 mb-4 mb-lg-0 ">
+        <div class="card  shadow py-4 active">
+          <div class="card-body text-center ">
+            <h4 class="mb-4">Participant Registration</h4>
+            <p>As an admin, you can register the participants in the system by providing their information such as Name, Address, Email, etc. Here the assumption is that the people willing to join the application have contacted the admin and provided their details. This process can be deferred to prospective future work.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <h4 class="mb-4">Manage Entitlements</h4>
+            <p>Manage entitlements or badges of the participants based on the time they are associated with the platform and maybe things like ratings given by other users. These entitlements or badges may include permission for sellers to sell a high-priced item and for the buyers to bid for a high-priced item. This will protect both buyers and sellers from fraud. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <h4 class="mb-4">Propose an item to be put up for auction as a seller.</h4>
+            <p>This proposed item goes to the admin for approvals. For this case, an NFT can be used as a way to provide requests. The NFT data will have fields such as item description, value, age etc, and the status of the item which will be an enum of pending, approved or rejected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-4 mb-4 mb-lg-0 ">
+        <div class="card  shadow py-4 active">
+          <div class="card-body text-center ">
+            <h4 class="mb-4">Approve registration of an item proposed by a seller</h4>
+            <p> Only approved items can be put up for auction.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <h4 class="mb-4">Participants need to register to participate in a particular auction.</h4>
+            <p>This process is automated and does not require approval from admins. You can only participate in items corresponding to your entitlement value.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <h4 class="mb-4">Bidding process.</h4>
+            <p>Registered participants can enter the bidding of an item being auctioned. The initial price of the item is displayed for the participants. There will be a set time limit before the auction ends and there is no time before the next bid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+</section>
+
+
+<!-- /service -->
+
+
+<!-- Future Scope -->
+<!-- service -->
+<section class="section" id="future-scope">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title">Future Scope</h2>
+        <p class="lead">The applicaiton must be able to serve more users at once without a load on the servers. The user experience can be improved by adopting rich UX principles for the website. The response time of the application can be improved to make sure the auction takes place without a hassle.
+        </p>
+        <div class="section-border"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /service -->
+
+<!-- feature -->
+<!-- <section class="section bg-secondary position-relative">
+  <div class="bg-image overlay-secondary">
+    <img src="images/feature.jpg" alt="bg-image">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="images/feature.jpg" alt="feature-image" class="img-fluid">
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="text-white">We know What Bait to Use</h2>
+                <div class="section-border ml-0"></div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-vector mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">User Experience</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-layout mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">Responsive Layout</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-headphone-alt mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">Digital Solutions</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-ruler-pencil mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">Bootstrap 4x</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /feature -->
+
+<!-- team -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>Our Team</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/Linkedin/aditya.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="https://www.linkedin.com/in/aditya-bej-029381110/">Aditya Kumar Bej <img width="24" height="24" src="images/linkedin.svg" alt=""> </a></h4>
+          </div>
+          <div>
+            <ul class="list mb-5" style="list-style-type:circle; margin-left: 10px;">
+              <li class="text-dark mb-3">Researched on how decentralised auction systems can be useful.</li>
+              <li class="text-dark mb-3">Researched on building decentralised applicaitons. </li>
+              <li class="text-dark mb-3">Worked on the UI of the application.</li>
+              <li class="text-dark mb-3">Worked on the system design of the application.</li>
+              <li class="text-dark mb-3">Researched about Radix and Scrypto by implementing basic projects, ex - Gumball.</li>
+              <li class="text-dark mb-3">Created smart contracts required for the applcation.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/Linkedin/guneet.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="https://www.linkedin.com/in/guneet-mummaneni1/">Guneet Mummaneni <img width="24" height="24" src="images/linkedin.svg" alt=""> </a></h4>
+          </div>
+          <div>
+            <ul class="list mb-5" style="list-style-type:circle; margin-left: 10px;">
+              <li class="text-dark mb-3">Researched on building decentralised applicaitons.</li>
+              <li class="text-dark mb-3">Created front end modules of the application.</li>
+              <li class="text-dark mb-3">Worked on the system design of the application.</li>
+              <li class="text-dark mb-3">Researched on Cerberus, Radix Engine's Shared Consenus Mechanism</li>
+              <li class="text-dark mb-3">Researched about Radix and Scrypto by implementing basic projects, ex - Gumball.</li>
+              <li class="text-dark mb-3">Worked on creating the Admin Page and Auction Item Listing's Page</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/Linkedin/komal.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="https://www.linkedin.com/in/komal-bakshi/">Komal Bakshi <img width="24" height="24" src="images/linkedin.svg" alt=""> </a></h4>
+          </div>
+
+          <div>
+            <ul class="list mb-5" style="list-style-type:circle; margin-left: 10px;">
+              <li class="text-dark mb-3">Researched on building decentralised applicaitons.</li>
+              <li class="text-dark mb-3">Created front end modules of the application.</li>
+              <li class="text-dark mb-3">Worked on the system design of the application.</li>
+              <li class="text-dark mb-3">Researched on Alphanet extension, Scrypto and Cerberus </li>
+              <li class="text-dark mb-3">Worked on adotpting Radix for the project backend</li>
+              <li class="text-dark mb-3">Worked on creating the Admin Page and Auction Item Listing's Page</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/Linkedin/madhu.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="https://www.linkedin.com/in/madhusk14/">Madhumitha Santhanakrishnan <img width="24" height="24" src="images/linkedin.svg" alt=""> </a></h4>
+          </div>
+
+          <div>
+            <ul class="list mb-5" style="list-style-type:circle; margin-left: 10px;">
+              <li class="text-dark mb-3">Researched on building decentralised applicaitons.</li>
+              <li class="text-dark mb-3">Worked on User authorisation module.</li>
+              <li class="text-dark mb-3">Connected the Scrypto smart contracts with the front end via typescript. </li>
+              <li class="text-dark mb-3">Worked on the system design of the application.</li>
+              <li class="text-dark mb-3">Researched on Alphanet extension and implemented gumball. </li>
+              <li class="text-dark mb-3">Worked on adotpting Radix for the project backend.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/Linkedin/shristi.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="https://www.linkedin.com/in/shristismn1/">Shristi Suman<img width="24" height="24" src="images/linkedin.svg" alt=""> </a></h4>
+          </div>
+          <div>
+            <ul class="list mb-5" style="list-style-type:circle; margin-left: 10px;">
+              <li class="text-dark mb-3">Researched on how decentralised auction systems can be useful.</li>
+              <li class="text-dark mb-3">Researched on building decentralised applicaitons.</li>
+              <li class="text-dark mb-3">Connected the Scrypto smart contracts with the front end via typescript. </li>
+              <li class="text-dark mb-3">Brainstormed the basic and key scrypto smart contracts required for the application.</li>
+              <li class="text-dark mb-3">Worked on the Login page UI components.</li>
+              <li class="text-dark mb-3">Worked on adotpting Radix for the project backend.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="bg-secondary position-relative" id="contact">
+  <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="bg-white p-4">
+            <h3 class="text-center">Contact Details</h3>
+            <div class="row">
+              <img class = "ml-3 mt-2" width="24" height="24" src="images/geo-alt-fill.svg" alt="">
+              <p class="ml-3 mt-2">University of California Davis, 1 Shields Ave, Davis, CA 95616</p>
+            </div>
+            <div class="row">
+              <img class = "ml-3 mt-2" width="24" height="24" src="images/envelope.svg" alt="">
+              <p class="ml-3 mt-2"> Email </p>
+            </div>
+            <table class="table table-striped mt-1">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">
+                    Email
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aditya Kumar Bej</td>
+                  <td>akbej@ucdavis.edu</td>
+                </tr>
+                <tr>
+                  <td>Guneet Mummaneni</td>
+                  <td>gmummaneni@ucdavis.edu</td>
+                </tr>
+                <tr>
+                  <td>Komal Bakshi</td>
+                  <td>kbakshi@ucdavis.edu</td>
+                </tr>
+                <tr>
+                  <td>Madhumitha Santhanakrishnan</td>
+                  <td>msan@ucdavis.edu</td>
+                </tr>
+                <tr>
+                  <td>Shristi Suman</td>
+                  <td>srssuman@ucdavis.edu</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- /team -->
+
+<!-- about -->
+<!-- <section class="section-lg position-relative bg-cover" data-background="images/backgrounds/about-bg.jpg">
+  <img src="images/backgrounds/about-bg-overlay.png" alt="overlay" class="overlay-image img-fluid">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-6 col-md-8 col-sm-7 col-8">
+        <h2 class="text-white mb-4">Who We Are</h2>
+        <p class="text-light mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.</p>
+        <a href="about.html" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="col-md-2 col-sm-4 col-4 text-right align-self-end">
+        <a class="venobox" data-autoplay="true" data-vbtype="video"
+          href="https://www.youtube.com/watch?v=jrkvirglgaQ"><i
+            class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play"></i></a>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /about -->
+
+<!-- project -->
+<!-- <section class="section">
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>Our Feature Works</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+
+    <div class="row no-gutters shuffle-wrapper">
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+          <img src="images/project/project-1.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Project title</a>
+            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+          <img src="images/project/project-2.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Project title</a>
+            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+          <img src="images/project/project-3.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Project title</a>
+            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+          <img src="images/project/project-4.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Project title</a>
+            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+          <img src="images/project/project-5.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Project title</a>
+            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /project -->
+
+<!-- call to action -->
+<!-- <section>
+  <div class="container section-sm overlay-secondary-half bg-cover" data-background="images/backgrounds/cta-bg.jpg">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-1">
+      <h2 class="text-gradient-primary">Let's Start With Us!</h2>
+      <p class="h4 font-weight-bold text-white mb-4">Lorem ipsum dolor sit amet, magna habemus ius ad</p>
+      <a href="contact.html" class="btn btn-lg btn-primary">Let’s talk</a>
+    </div>
+  </div>
+</div>
+</section> -->
+<!-- /call to action -->
+
+<!-- pricing -->
+<!-- <section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>Our Smart Pricing Table</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card bottom-shape bg-secondary pt-4 pb-5">
+          <div class="card-body text-center">
+            <h4 class="text-white">Basic</h4>
+            <p class="text-light mb-4">Besic and simple website</p>
+            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
+            <ul class="list-unstyled mb-5">
+              <li class="text-white mb-3">Mobile-Optimized Website</li>
+              <li class="text-white mb-3">Powerful Website Metrics</li>
+              <li class="text-white mb-3">Free Custom Domain</li>
+              <li class="text-white mb-3">24/7 Customer Support</li>
+              <li class="text-white mb-3">Fully Integrated E-Cormmerce</li>
+              <li class="text-white mb-3">Sell unlimited Product</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Try it now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card bottom-shape bg-secondary pt-4 pb-5">
+          <div class="card-body text-center">
+            <h4 class="text-white">Basic</h4>
+            <p class="text-light mb-4">Besic and simple website</p>
+            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
+            <ul class="list-unstyled mb-5">
+              <li class="text-white mb-3">Mobile-Optimized Website</li>
+              <li class="text-white mb-3">Powerful Website Metrics</li>
+              <li class="text-white mb-3">Free Custom Domain</li>
+              <li class="text-white mb-3">24/7 Customer Support</li>
+              <li class="text-white mb-3">Fully Integrated E-Cormmerce</li>
+              <li class="text-white mb-3">Sell unlimited Product</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Try it now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card bottom-shape bg-secondary pt-4 pb-5">
+          <div class="card-body text-center">
+            <h4 class="text-white">Basic</h4>
+            <p class="text-light mb-4">Besic and simple website</p>
+            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
+            <ul class="list-unstyled mb-5">
+              <li class="text-white mb-3">Mobile-Optimized Website</li>
+              <li class="text-white mb-3">Powerful Website Metrics</li>
+              <li class="text-white mb-3">Free Custom Domain</li>
+              <li class="text-white mb-3">24/7 Customer Support</li>
+              <li class="text-white mb-3">Fully Integrated E-Cormmerce</li>
+              <li class="text-white mb-3">Sell unlimited Product</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Try it now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /pricing -->
+
+<!-- blog -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>Latest News</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <article class="card">
+          <img src="images/blog/post-1.jpg" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-0">
+            <time>January 15, 2018</time>
+            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
+              Book Covers Reflect the Design</a>
+            <a href="#" class="btn btn-transparent">Read more</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <article class="card">
+          <img src="images/blog/post-2.jpg" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-0">
+            <time>January 15, 2018</time>
+            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
+              Book Covers Reflect the Design</a>
+            <a href="#" class="btn btn-transparent">Read more</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <article class="card">
+          <img src="images/blog/post-3.jpg" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-0">
+            <time>January 15, 2018</time>
+            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
+              Book Covers Reflect the Design</a>
+            <a href="#" class="btn btn-transparent">Read more</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /blog -->
+
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- shuffle -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<!-- apear js -->
+<script src="plugins/counto/apear.js"></script>
+<!-- counter -->
+<script src="plugins/counto/counTo.js"></script>
+<!-- card slider -->
+<script src="plugins/card-slider/js/card-slider-min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
